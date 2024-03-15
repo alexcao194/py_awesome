@@ -1,11 +1,9 @@
 Metadata-Version: 2.1
-Name: py_awesome
-Version: 0.0.1
+Name: py-awesome
+Version: 0.4.1
 Summary: short package description
-Home-page: package URL
 Author: alexcao
 Author-email: alexcao194@gmail.com
-Project-URL: Bug Tracker, package issues URL
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
