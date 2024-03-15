@@ -1,12 +1,26 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-import io
-import re
-from setuptools import setup
+import setuptools
 
-PACKAGE_NAME = "py_awesome"
+with open("README.md", "r", encoding = "utf-8") as fh:
+    long_description = fh.read()
 
-with io.open("%s/__init__.py" % PACKAGE_NAME, "rt", encoding="utf8") as f:
-    version = re.search(r"__version__ = \"(.*?)\"", f.read()).group(1)
-
-setup(version=version)
+setuptools.setup(
+    name = "py_awesome",
+    version = "0.0.1",
+    author = "alexcao",
+    author_email = "alexcao194@gmail.com",
+    description = "short package description",
+    long_description = long_description,
+    long_description_content_type = "text/markdown",
+    url = "package URL",
+    project_urls = {
+        "Bug Tracker": "package issues URL",
+    },
+    classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    package_dir = {"": "py_awesome"},
+    packages = setuptools.find_packages(where="py_awesome"),
+    python_requires = ">=3.6"
+)
