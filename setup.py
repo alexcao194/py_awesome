@@ -1,12 +1,17 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-import io
-import re
-from setuptools import setup
+from setuptools import setup, find_packages
 
-PACKAGE_NAME = "py_awesome"
-
-with io.open("%s/__init__.py" % PACKAGE_NAME, "rt", encoding="utf8") as f:
-    version = re.search(r"__version__ = \"(.*?)\"", f.read()).group(1)
-
-setup(version=version)
+setup(
+    name='py_awesome',
+    version='0.4.1',
+    packages=find_packages(),
+    install_requires=[
+        'pygame'
+    ],
+    entry_points={
+        'console_scripts': [
+            'gen = py_awesome.gen:gen'
+        ]
+    },
+    # add game folder to the package
+    package_data={'py_awesome': ['game/*', 'core/*', 'utils/*', 'game/animations/*', 'game/entity/*', 'game/state/*', 'game/widget/*', 'local_storage/*', 'utils/*', 'assets/*']},
+)
