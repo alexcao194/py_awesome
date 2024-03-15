@@ -11,7 +11,7 @@ setuptools.setup(
     description = "short package description",
     long_description = long_description,
     long_description_content_type = "text/markdown",
-    url = "https://github.com/alexcao194/py_awesome/archive/refs/tags/test.tar.gz",
+    # url = "https://github.com/alexcao194/py_awesome/archive/refs/tags/test.tar.gz",
     project_urls = {
         "Bug Tracker": "package issues URL",
     },
