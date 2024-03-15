@@ -21,6 +21,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     package_dir = {"": "py_awesome"},
-    packages = setuptools.find_packages(),
+    packages = setuptools.find_packages(where="py_awesome"),
     python_requires = ">=3.6"
 )
