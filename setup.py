@@ -11,7 +11,7 @@ setuptools.setup(
     description = "short package description",
     long_description = long_description,
     long_description_content_type = "text/markdown",
-    url = "package URL",
+    url = "https://github.com/alexcao194/py_awesome/",
     project_urls = {
         "Bug Tracker": "package issues URL",
     },
